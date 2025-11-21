@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(234, 29%, 20%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+}
+
+main {
+    background-color: white;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    max-width: 800px;
+
+}
+
+.card-left {
+    padding: 3rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-left h1 {
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-size: 40px;
+    text-align: left;
+
+}
+
+.card-left p {
+    color: hsl(235, 18%, 26%);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.card-left ul li {
+    list-style-image: url('../assets/images/icon-list.svg');
+    font-size: 16px;
+    color: hsl(235, 18%, 26%);
+    text-align: left;
+    margin: 0.5rem;
+}
+
+label {
+    color: hsl(234, 29%, 20%);
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: -1rem;
+    padding: 0;
+}
+
+.card-left input {
+    width: 100%;
+    height: 40px;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid hsl(235, 18%, 26%);
+}
+
+#Subscribe {
+    background-color: hsl(234, 29%, 20%);
+    width: 100%;
+    height: 40px;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    justify-content: center;
+
+}
+
+#Subscribe:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.card-right {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+}
+
+.card-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 1.5rem;
+}
+
+@media (max-width: 450px) {
+
+
+    main {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .card-right {
+        background-image: url('../assets/images/illustration-sign-up-mobile.svg');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 47vh;
+        border-bottom-left-radius: 1.5rem;
+        border-bottom-right-radius: 1.5rem;
+        overflow: hidden;
+
+    }
+
+    .card-right img {
+        display: none;
+    }
+
+    .card-left {
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+        
+    }
+
+    .card-left h1 {
+        text-align: left;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+
+}
