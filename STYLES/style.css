@@ -53,24 +53,24 @@ main {
     margin: 0.5rem;
 }
 
-.labels{
+.labels {
     display: flex;
     flex-direction: row;
     gap: 6rem;
     margin-bottom: -1rem;
-    
-} 
+
+}
 
 label {
     color: hsl(234, 29%, 20%);
     font-size: 14px;
     font-weight: 700;
-       
+
 }
 
-.errorLabel{
+.errorLabel {
     display: none;
-    color:  hsl(4, 100%, 67%);
+    color: hsl(4, 100%, 67%);
     font-size: 12px;
     text-align: right;
 
@@ -90,7 +90,7 @@ label {
     padding: 1rem;
     border-radius: 6px;
     border: 1px solid hsl(4, 100%, 67%);
-    
+
 }
 
 
@@ -158,7 +158,7 @@ label {
         align-content: center;
         justify-content: center;
         width: 100%;
-        
+
     }
 
     .card-left h1 {
@@ -167,11 +167,66 @@ label {
         font-weight: 700;
     }
 
-    .labels{
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    margin-bottom: -1rem;
+    .labels {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+        margin-bottom: -1rem;
     }
 
+}
+
+/*FIM DA PAG 1*/
+
+/*INICIO PAG 2*/
+
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 500px;
+    background-color: hsl(0, 0%, 100%);
+    margin: 2rem;
+}
+
+.success img {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 2rem;
+    width: 60px;
+}
+
+.success h1 {
+    color: hsl(234, 29%, 20%);
+    font-size: 50px;
+    text-align: left;
+    margin: 2rem;
+}
+
+.success p {
+    color: hsl(235, 18%, 26%);
+    text-align: left;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 2rem;
+}
+
+#dismiss {
+    background-color: hsl(234, 29%, 20%);
+    width: 85%;
+    height: 60px;
+    margin: 2rem;
+    border-radius: 6px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    justify-content: center;
+}
+
+#dismiss:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
