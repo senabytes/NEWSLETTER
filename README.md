@@ -1,4 +1,4 @@
-#Newsletter - Frontend Mentor
+# Newsletter - Frontend Mentor
 # 🖇LIVE - https://senabytes.github.io/NEWSLETTER/
 
 Este projeto é um desafio de código da plataforma Frontend Mentor.
