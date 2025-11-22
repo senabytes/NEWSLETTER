@@ -230,3 +230,54 @@ label {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
+
+@media((max-width: 450px)){
+    
+   body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vw;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 100%) ;
+}
+
+    .success{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        box-sizing: border-box;
+        border-radius: 20px;        
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .success img{
+        margin-top: 5.5rem;
+        align-items: flex-start;
+    }
+
+    .success h1{
+        font-size: 30px;
+        align-self: center;
+        text-align: left;
+    }
+
+    .success p{
+        font-size: 15px;
+        align-content: center;
+        justify-content: center;
+
+    }
+    
+    #dismiss{
+        margin-top: 10rem;
+        background-color: hsl(234, 29%, 20%)
+    }
+
+    #dismiss:active {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    cursor: pointer;
+}
+}
