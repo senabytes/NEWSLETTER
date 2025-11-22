@@ -21,14 +21,25 @@
         <img src="assets/images/icon-success.svg" >
 
         <h1>Thanks for subscribing!</h1>
-        <p>A confirmation email has been sent to ash@loremcompany.com. 
+        <p id="confirmationText">A confirmation email has been sent to ash@loremcompany.com. 
             Please open it and click the button inside to confirm your subscription.</p>
 
         <button id="dismiss">Dismiss message</button>
 
     </main>
 
-    <script src="success.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+  const params = new URLSearchParams(window.location.search);
+  const userEmail = params.get("email");
+
+  if (userEmail) {
+    const confirmationText = document.getElementById("confirmationText");
+    confirmationText.textContent = `A confirmation email has been sent to ${userEmail}. Please open it and click the button inside to confirm your subscription.`;
+  }
+</script>
+
 
 </body>
 
